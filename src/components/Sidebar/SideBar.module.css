@@ -1,0 +1,21 @@
+.titlecontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	color: var(--text-color);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.content {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.3s ease;
+}
+
+.content.show {
+	height: auto;
+}

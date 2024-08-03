@@ -1,0 +1,30 @@
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0.9rem;
+	cursor: pointer;
+	background-color: #fff;
+	border: 0.5px solid #c1c0c0;
+	border-top: 0;
+	border-bottom: 0;
+	height: 60px;
+}
+.boxContent {
+	margin: 0;
+	padding: 0.3rem 0rem;
+}
+
+.nextBtn {
+	height: 30px;
+	width: 30px;
+}
+
+:global(.slick-prev) {
+	left: -15px;
+	z-index: 1;
+}
+:global(.slick-next) {
+	right: -17px;
+}

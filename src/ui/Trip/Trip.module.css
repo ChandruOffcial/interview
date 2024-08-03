@@ -1,0 +1,58 @@
+.tripContainer {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	margin: 1rem 2rem 0.3rem;
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.radioInput[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.radioInput[type="radio"] + .radioLabel:before {
+	content: "";
+	background: #f4f4f4;
+	border-radius: 50%;
+	border: 2px solid #b5b5b5;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	margin-right: 0.5em;
+	vertical-align: middle;
+	cursor: pointer;
+	text-align: center;
+	transition: all 250ms ease;
+}
+
+.radioInput[type="radio"]:checked + .radioLabel:before {
+	background-color: #3197ee;
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+
+.radioInput[type="radio"]:focus + .radioLabel:before {
+	outline: none;
+	border-color: #3197ee;
+}
+
+.radioInput[type="radio"]:disabled + .radioLabel:before {
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+	border-color: #b5b5b5; /* darken(#f4f4f4, 25%) */
+	background: #b5b5b5; /* darken(#f4f4f4, 25%) */
+}
+
+.radioInput[type="radio"] + .radioLabel:empty:before {
+	margin-right: 0;
+}
+
+.radioLabel {
+	font-size: 1rem;
+	color: #2b3a42; /* Adjust the color to match the screenshot */
+}

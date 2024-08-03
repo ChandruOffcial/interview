@@ -1,0 +1,16 @@
+.dashBorder {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.dash:before {
+	content: "";
+	position: absolute;
+	border-bottom: 10px dashed #827c7c;
+	top: 9px;
+	bottom: -8px;
+	left: 0px;
+	right: 0px;
+}

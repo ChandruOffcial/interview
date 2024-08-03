@@ -1,0 +1,28 @@
+.cardContainer {
+	background-color: var(--color-white);
+	border: inherit;
+	outline: inherit;
+	border-radius: 0.1rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 2rem 2rem 1rem 2rem;
+	margin: 1rem 0rem;
+	border-radius: 10px;
+}
+
+.dashBorder {
+	overflow: hidden;
+	position: relative;
+
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.dash:before {
+	content: "";
+	position: absolute;
+	border-bottom: 10px dashed #827c7c;
+	top: -8px;
+	bottom: -8px;
+	left: -8px;
+	right: -8px;
+}

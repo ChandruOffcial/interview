@@ -1,0 +1,63 @@
+/* Styles for the slider component */
+.slider {
+	height: 10px;
+	width: 100%;
+	background-color: var(--slider-track);
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+/* Styles for the slider thumb */
+.slider :global(.thumb) {
+	height: 17px;
+	width: 17px;
+	border-radius: 50%;
+	background-color: var(--slider-track);
+	cursor: grab;
+	outline: none;
+	top: -3px;
+	border: 7px solid var(--slider-bg);
+}
+
+/* Styles for the slider active state */
+/* .slider :global(.thumb.active) {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} */
+
+:global(.example-track-1) {
+	background: var(--slider-bg);
+	height: 10px;
+	border-radius: 10px;
+}
+
+.mainTrack {
+	position: relative;
+}
+
+.dotTrack {
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	top: 1px;
+	left: 0;
+	right: 0;
+}
+.dot {
+	height: 7px;
+	width: 7px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.heading {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.duration {
+	color: #0095ff;
+	font-size: 12px;
+	padding-left: 10px;
+}

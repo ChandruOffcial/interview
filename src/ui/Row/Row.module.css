@@ -1,0 +1,23 @@
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.textContainer {
+	text-align: left;
+	justify-content: left;
+	row-gap: 10px;
+	align-items: flex-start;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
