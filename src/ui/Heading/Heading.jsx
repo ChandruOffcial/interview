@@ -32,7 +32,7 @@ const Heading = ({ children, type, customStyle = {}, customClassName = "" }) => 
 	}
 	if (type === "h5") {
 		return (
-			<h5 className={`${styles.h5} ${styles[customClassName]}`} style={customStyle}>
+			<h5 className={styles.h5} style={customStyle}>
 				{children}
 			</h5>
 		);

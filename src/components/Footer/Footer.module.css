@@ -1,12 +1,22 @@
 .footer {
-	background-color: #002855;
-	color: white;
+	background-color: #082f73;
 	padding: 2rem;
-	text-align: center;
+	color: white;
+	text-align: left;
+	/* display: flex; */
+}
+.footer__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: auto;
+	gap: 2rem;
+	max-width: 72rem;
+	margin: 0 auto;
 }
 
 .newsletter {
 	margin-bottom: 2rem;
+	grid-column: 1 / span 3;
 }
 
 .newsletter h2 {
@@ -15,24 +25,29 @@
 }
 
 .newsletterForm {
-	display: flex;
-	justify-content: center;
+	padding: 1rem;
 }
 
 .newsletterInput {
 	padding: 0.5rem;
 	border: 1px solid #b5b5b5;
-	border-radius: 4px;
+	border-radius: 5px;
 	margin-right: 1rem;
 	width: 250px;
+	background-color: transparent;
+	width: 40%;
+}
+.newsletterInput::placeholder {
+	color: #fff;
 }
 
 .subscribeButton {
 	padding: 0.5rem 1rem;
 	border: none;
 	border-radius: 4px;
-	background-color: #3197ee;
-	color: white;
+	background-color: #fff;
+	color: #3197ee;
+	font-weight: 600;
 	cursor: pointer;
 }
 
@@ -61,6 +76,7 @@
 .footerColumn li {
 	margin-bottom: 0.5rem;
 	color: #b5b5b5;
+	cursor: pointer;
 }
 
 .socialMedia {

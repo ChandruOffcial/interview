@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Heading from "../../ui/Heading/Heading";
 import Row from "../../ui/Row/Row";
 import Svg from "../../ui/Svg/Svg";
@@ -5,15 +6,31 @@ import styles from "./Card.module.css";
 import CardBody from "./CardBody";
 import CardFooter from "./CardFooter";
 
-const Card = () => {
+const Card = ({ data }) => {
+	const {
+		id,
+		airlineName,
+		airlinePath,
+		travelClss,
+		seats,
+		travelStartDate,
+		travelStartTime,
+		travelStartLoc,
+		travelEndDate,
+		travelEndTime,
+		travelEndLoc,
+		durationTime,
+		price,
+		offer,
+	} = data;
 	return (
-		<div className={styles.cardContainer}>
+		<div className={styles.cardContainer} id={id}>
 			{/* Card Head */}
 			<Row type="row" customStyle={{ justifyContent: "space-between", alignItems: "center" }}>
 				<Row type="row" customStyle={{ alignItems: "center", columnGap: "10px" }}>
-					<img src="./images/img1.png" alt="image" height={30} />
+					<img src={airlinePath} alt={airlineName} height={30} />
 					<Heading type="h4" customStyle={{ fontWeight: 600 }}>
-						ABC Airline
+						{airlineName}
 					</Heading>
 				</Row>
 				<Row type="row" customStyle={{ alignItems: "center" }}>
@@ -27,13 +44,24 @@ const Card = () => {
 						/>
 					</Svg>
 					<Heading type="h4" customStyle={{ paddingLeft: "10px", fontFamily: "Segoe UI" }}>
-						Travel Class: <span style={{ fontWeight: 600 }}>Economy</span>
+						Travel Class: <span style={{ fontWeight: 600 }}>{travelClss}</span>
 					</Heading>
 				</Row>
 			</Row>
 
 			{/* Card Body */}
-			<CardBody />
+			<CardBody
+				seats={seats}
+				travelStartDate={travelStartDate}
+				travelStartTime={travelStartTime}
+				travelStartLoc={travelStartLoc}
+				travelEndDate={travelEndDate}
+				travelEndTime={travelEndTime}
+				travelEndLoc={travelEndLoc}
+				durationTime={durationTime}
+				price={price}
+				offer={offer}
+			/>
 
 			<div className={styles.dashBorder}>
 				<div className={styles.dash}></div>

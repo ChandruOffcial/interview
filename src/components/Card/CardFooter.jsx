@@ -22,8 +22,7 @@ function PackingItem({ imagePath, content }) {
 	return (
 		<Row type="row" customStyle={{ alignItems: "center", columnGap: "10px" }}>
 			<img src={imagePath} alt="Bag" height={20} width={20} />
-
-			<p>{content}</p>
+			<p style={{ fontSize: ".8em" }}>{content}</p>
 		</Row>
 	);
 }

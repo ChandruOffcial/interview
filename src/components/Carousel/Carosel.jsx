@@ -50,7 +50,7 @@ function CustomArrows() {
 	const settings = {
 		dots: false,
 		infinite: true,
-		slidesToShow: 8,
+		slidesToShow: 6,
 		slidesToScroll: 1,
 		nextArrow: <SampleNextArrow className="nextBtn" style={{ height: "30px", width: "30px" }} />,
 		prevArrow: <SamplePrevArrow />,

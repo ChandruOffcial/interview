@@ -2,8 +2,7 @@
 	padding: 5px;
 	display: grid;
 	grid-template-columns: 3fr 0.7fr;
-	grid-template-rows: 3fr 1fr;
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 }
 
 .card1 {
@@ -18,7 +17,6 @@
 	background-color: #fff;
 	grid-row: span 2;
 }
-
 .startPoint {
 	position: relative;
 	width: 25%;
