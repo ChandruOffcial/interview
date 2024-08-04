@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Row from "../../ui/Row/Row";
 import Button from "../../ui/Button/Button";
 import styles from "./NavBar.module.css";
@@ -7,7 +7,9 @@ const NavBar = () => {
 	return (
 		<nav className={styles.nav}>
 			{/* Logo */}
-			<img src="/images/logo.png" alt="travel caribe" height={55} />
+			<Link to="/">
+				<img src="/images/logo.png" alt="travel caribe" height={55} />
+			</Link>
 
 			{/* Links */}
 			<ul className={styles.navLink}>

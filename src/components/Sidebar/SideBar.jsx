@@ -28,15 +28,15 @@ const stops = [
 
 const Connections = [
 	{
-		id: 1,
+		id: 5,
 		name: "Self-transfer to different station/airport",
 	},
 	{
-		id: 2,
+		id: 6,
 		name: "Allow return from a different station/airport",
 	},
 	{
-		id: 3,
+		id: 7,
 		name: "Allow return to a different station/airport",
 	},
 ];
